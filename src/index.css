@@ -12,3 +12,11 @@
     border: 15px solid #e5e7eb;
     border-top: none;
 }
+
+@media screen and (min-width: 640px) {
+    .user-card {
+        border: 20px solid #e5e7eb;
+        border-top: none;
+        border-left: none;
+    }
+}
