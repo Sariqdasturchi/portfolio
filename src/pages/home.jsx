@@ -1,10 +1,11 @@
-import React from 'react'
-import Header from '../components/header'
-import userImage from '../assets/user-home.jpg'
-import { FiMapPin } from 'react-icons/fi'
-import { FaGithub } from 'react-icons/fa'
-import { FiYoutube } from 'react-icons/fi'
-import { TbBrandTelegram } from 'react-icons/tb'
+import React from 'react';
+import Header from '../components/header';
+import userImage from '../assets/user-home.jpg';
+import { FiMapPin } from 'react-icons/fi';
+import { FaGithub } from 'react-icons/fa';
+import { FiYoutube } from 'react-icons/fi';
+import { IoLogoLinkedin } from "react-icons/io5";
+import { TbBrandTelegram } from 'react-icons/tb';
 import About from './about'
 
 export default function Home () {
@@ -54,6 +55,13 @@ export default function Home () {
                 className='text-[17px] mr-5'
                 target='_blank'
                 href='https://www.linkedin.com/in/suhrobbozorov/'
+              >
+                <IoLogoLinkedin />
+              </a>
+              <a
+                className='text-[17px] mr-5'
+                target='_blank'
+                href='https://github.com/Sariqdasturchi'
               >
                 <FaGithub />
               </a>
