@@ -84,7 +84,7 @@ export default function Header () {
             )}
           </div>
           {toggleMenu && (
-            <div className='absolute sm:flex md:hidden lg:hidden xl:hidden 2xl:hidden inset-y-0 inset-x-0 w-[100%] h-screen bg-gray-light-200 z-10'>
+            <div className='absolute sm:flex md:hidden lg:hidden xl:hidden 2xl:hidden inset-y-0 inset-x-0 w-[100%] h-screen z-10'>
               <div className='w-[92%] h-screen bg-gray-light-50 shadow fixed'>
                 <div className='w-full flex items-center justify-between p-3'>
                   <a href='/'>

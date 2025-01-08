@@ -28,12 +28,12 @@ export default function Home () {
           {/* home text component */}
           <div className='w-full sm:w-[50%] md:w-[50%] h-[auto] flex flex-col mt-5'>
             <div className='flex'>
-              <h1 className='text-[32px] inline'>Hi, I’m Suhrob</h1>
+              <h1 className='text-[32px] inline font-medium'>Hi, I’m Suhrob</h1>
             </div>
             {/* description */}
             <div>
               <p>
-                I'm a full stack developer (React.js) with a focus on creating
+                I'm a Frontend developer (React.js) with a focus on creating
                 (and occasionally designing) exceptional digital experiences
                 that are fast, accessible, visually appealing, and responsive.
                 Even though I have been creating web applications for over 2
