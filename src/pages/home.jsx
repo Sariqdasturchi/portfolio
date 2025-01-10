@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../components/header';
 import userImage from '../assets/user-home.jpg';
 import { FiMapPin } from 'react-icons/fi';
 import { FaGithub } from 'react-icons/fa';
@@ -7,12 +6,11 @@ import { FiYoutube } from 'react-icons/fi';
 import { IoLogoLinkedin } from "react-icons/io5";
 import { TbBrandTelegram } from 'react-icons/tb';
 import About from './about'
+import Skills from './skills';
 
 export default function Home () {
   return (
     <>
-      {/* header component */}
-      <Header />
       <section className='w-full h-[auto]'>
         <div className='w-[90%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[80%] 2xl:w-[80%] h-dvh sm:h-[50vh] md:h-[60vh] lg:h-[65vh] xl:h-[70vh] 2xl:h-[75vh] mx-auto flex flex-col sm:flex-row-reverse md:flex-row-reverse lg:flex-row-reverse xl:flex-row-reverse 2xl:flex-row-reverse items-center sm:justify-between '>
           {/* user card */}
@@ -28,7 +26,7 @@ export default function Home () {
           {/* home text component */}
           <div className='w-full sm:w-[50%] md:w-[50%] h-[auto] flex flex-col mt-5'>
             <div className='flex'>
-              <h1 className='text-[32px] inline font-medium'>Hi, I’m Suhrob</h1>
+              <h1 className='text-[32px] sm:text-[34px] md:text-[36px] lg:text-[38px] xl:text-[40px] 2xl:text-[42px] inline font-medium'>Hi, I’m Suhrob</h1>
             </div>
             {/* description */}
             <div>
@@ -83,7 +81,6 @@ export default function Home () {
           </div>
         </div>
       </section>
-      <About />
     </>
   )
 }
