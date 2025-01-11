@@ -5,7 +5,7 @@ import WorkCard from '../components/workCard'
 export default function Work () {
   return (
     <>
-      <section className='w-full h-auto flex flex-col justify-center items-center mt-20 bg-gray-light-50 '>
+      <section className='w-full h-auto flex flex-col justify-center items-center mt-20 bg-gray-light-50 ' >
         <div className='pt-5 mx-auto flex justify-center items-center mb-4'>
           <TagButton children={'Experience'} />
         </div>

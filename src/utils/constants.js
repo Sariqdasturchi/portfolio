@@ -1,8 +1,8 @@
 export const navMenu = [
-  { id: 1, title: 'About' },
-  { id: 2, title: 'Work' },
-  { id: 3, title: 'Testimonials' },
-  { id: 4, title: 'Contact' }
+  { id: 1, title: 'About', link: "#about" },
+  { id: 2, title: 'Work', link: "#work" },
+  { id: 3, title: 'Testimonials', link: "#testimonials" },
+  { id: 4, title: 'Contact', link: "#contact" }
 ]
 
 import html from '../assets/html.png'

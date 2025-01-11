@@ -40,7 +40,7 @@ export default function Header () {
                         id === navMenu.length - 1 ? 'mr-0' : 'mr-5'
                       }`}
                     >
-                      <a href=''>{item.title}</a>
+                      <a href={`${item.link}`}>{item.title}</a>
                     </li>
                   ))}
                 </ul>
@@ -102,7 +102,7 @@ export default function Header () {
                     {navMenu.map((item, id) => (
                       <li key={item.id} className='mt-3'>
                         <a
-                          href=''
+                          href={`${item.link}`}
                           className='text-[17px] font-medium text-gray-light-950'
                         >
                           {item.title}

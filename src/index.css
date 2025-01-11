@@ -8,6 +8,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .user-card {
     border: 15px solid #e5e7eb;
     border-top: none;

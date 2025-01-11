@@ -4,7 +4,7 @@ import userImage from '../assets/user-about.jpg'
 export default function About () {
   return (
     <>
-      <section className='w-full justify-center items-center h-[auto] bg-gray-light-50'>
+      <section className='w-full justify-center items-center h-[auto] bg-gray-light-50' id='about'>
         <div className='pt-5 mx-auto flex justify-center items-center'>
           <TagButton children={'About me'} />
         </div>

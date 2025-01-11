@@ -5,7 +5,7 @@ import TestimonialsCard from '../components/testimonialsCard'
 export default function Testimonails () {
   return (
     <>
-      <section className='w-full h-auto flex flex-col justify-center items-center bg-gray-light-50'>
+      <section className='w-full h-auto flex flex-col justify-center items-center bg-gray-light-50' id='testimonials'>
         <div className='pt-5 mx-auto flex justify-center items-center mb-4'>
           <TagButton children={'Testimonials'} />
         </div>
