@@ -11,8 +11,8 @@ import Skills from './skills';
 export default function Home () {
   return (
     <>
-      <section className='w-full h-[auto]'>
-        <div className='w-[90%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[80%] 2xl:w-[80%] h-dvh sm:h-[50vh] md:h-[60vh] lg:h-[65vh] xl:h-[75vh] 2xl:h-[100vh] mx-auto flex flex-col sm:flex-row-reverse md:flex-row-reverse lg:flex-row-reverse xl:flex-row-reverse 2xl:flex-row-reverse items-center sm:justify-between pt-10 md:pt-0'>
+      <section className='w-full h-auto mb-10'>
+        <div className='w-[90%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[80%] 2xl:w-[80%] h-100vh sm:h-[50vh] md:h-[60vh] lg:h-[65vh] xl:h-[75vh] 2xl:h-[100vh] mx-auto flex flex-col sm:flex-row-reverse md:flex-row-reverse lg:flex-row-reverse xl:flex-row-reverse 2xl:flex-row-reverse items-center sm:justify-between pt-10 md:pt-0'>
           {/* user card */}
           <div className='w-[280px] sm:w-[290px] md:w-[300px] lg:w-[320px] xl:w-[330px] 2xl:w-[400px] h-[280px] sm:h-[290px] md:h-[300px] lg:h-[320px] xl:h-[330px] 2xl:h-[350px] flex justify-center items-center user-card mt-12'>
             <div className='w-[240px] sm:w-[250px] md:w-[270px] lg:w-[290px] xl:w-[300px] 2xl:w-[360px] h-[300px] sm:h-[310px] md:h-[300px] lg:h-[360px] xl:h-[380px] 2xl:h-[435px] '>
