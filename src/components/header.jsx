@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { HiOutlineMenuAlt1 } from 'react-icons/hi'
 import { GiMoonBats } from 'react-icons/gi'
 import { MdSunny } from 'react-icons/md'
@@ -6,12 +6,23 @@ import { MdOutlineClose } from 'react-icons/md'
 import { navMenu } from '../utils/constants'
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6'
 
-
 import resume from '../assets/Resume.pdf'
 
 export default function Header () {
-  const [darkMode, setDarkMode] = useState(true)
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem('theme') === 'dark'
+  )
   const [toggleMenu, setToggleMenu] = useState(false)
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark') // Tailwind CSS 'dark' sinfini qo'shish
+      localStorage.setItem('theme', 'dark') // Dark mode holatini saqlash
+    } else {
+      document.documentElement.classList.remove('dark') // 'dark' sinfini olib tashlash
+      localStorage.setItem('theme', 'light') // Light mode holatini saqlash
+    }
+  }, [darkMode])
 
   const darkModeHandler = () => {
     setDarkMode(dark => !dark)
@@ -27,7 +38,7 @@ export default function Header () {
         <nav className='w-full sm:w-full md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%] h-full flex justify-between sm:justify-between md:justify-between lg:justify-between xl:justify-between 2xl:justify-between items-center pr-5 pl-5'>
           <div>
             <a href='/'>
-              <span className='flex justify-center items-center text-[28px] sm:text-[30px] md:text-[32px] lg:text-[34px] xl:text-[36px] 2xl:text-[38px] font-semibold'>
+              <span className='flex justify-center items-center text-[28px] sm:text-[30px] md:text-[32px] lg:text-[34px] xl:text-[36px] 2xl:text-[38px] font-semibold dark:text-gray-light'>
                 <FaAngleLeft />
                 SD /
                 <FaAngleRight />
@@ -46,7 +57,12 @@ export default function Header () {
                         id === navMenu.length - 1 ? 'mr-0' : 'mr-5'
                       }`}
                     >
-                      <a href={`${item.link}`}>{item.title}</a>
+                      <a
+                        href={`${item.link}`}
+                        className='text-gray-dark dark:text-gray-light'
+                      >
+                        {item.title}
+                      </a>
                     </li>
                   ))}
                 </ul>
@@ -54,17 +70,17 @@ export default function Header () {
               <div className='flex items-center ml-5'>
                 <div className='flex mr-3'>
                   {darkMode ? (
-                    <button>
+                    <button className='flex justify-center items-center w-8 h-8 rounded-[8px] dark:bg-gray-dark-300 hover:opacity-80'>
                       <MdSunny
                         onClick={darkModeHandler}
-                        className='cursor-pointer'
+                        className='cursor-pointer text-gray-dark dark:text-gray-light'
                       />
                     </button>
                   ) : (
-                    <button>
+                    <button className='flex justify-center items-center w-8 h-8 rounded-[8px] bg-gray-light-500 text-gray-light hover:bg-gray-dark-50 hover:text-gray-light'>
                       <GiMoonBats
                         onClick={darkModeHandler}
-                        className='cursor-pointer'
+                        className=' cursor-pointer'
                       />
                     </button>
                   )}
@@ -88,22 +104,26 @@ export default function Header () {
               <button>
                 <HiOutlineMenuAlt1
                   onClick={toggleMenuHandler}
-                  className='text-[24px]'
+                  className='text-[24px] dark:text-gray-light'
                 />
               </button>
             )}
           </div>
           {toggleMenu && (
             <div className='absolute sm:flex md:hidden lg:hidden xl:hidden 2xl:hidden inset-y-0 inset-x-0 w-[100%] h-screen z-10'>
-              <div className='w-[92%] h-screen bg-gray-light-50 shadow fixed'>
+              <div className='w-[92%] h-screen bg-gray-light-50 dark:bg-gray-dark shadow fixed'>
                 <div className='w-full flex items-center justify-between p-3'>
                   <a href='/'>
-                    <span className='text-[28px] font-semibold'>SD</span>
+                    <span className='flex justify-center items-center text-[28px] font-semibold text-gray-dark dark:text-gray-light'>
+                      <FaAngleLeft />
+                      SD /
+                      <FaAngleRight />
+                    </span>
                   </a>
                   <button>
                     <MdOutlineClose
                       onClick={toggleMenuHandler}
-                      className='text-[24px]'
+                      className='text-[24px] text-gray-dark dark:text-gray-light'
                     />
                   </button>
                 </div>
@@ -113,7 +133,7 @@ export default function Header () {
                       <li key={item.id} className='mt-3'>
                         <a
                           href={`${item.link}`}
-                          className='text-[17px] font-medium text-gray-light-950'
+                          className='text-[17px] font-medium text-gray-dark dark:text-gray-light'
                         >
                           {item.title}
                         </a>
@@ -123,17 +143,19 @@ export default function Header () {
                   <div className='w-[90%] h-[1px] mt-8 mb-8 bg-gray-light-300'></div>
                   <div className='w-full h-[auto] flex flex-col'>
                     <div className='w-full flex justify-between items-center'>
-                      <h3>Switch Theme</h3>
+                      <h3 className='text-gray-dark dark:text-gray-light'>
+                        Switch Theme
+                      </h3>
                       <div className='flex mr-10'>
                         {darkMode ? (
-                          <button>
+                          <button className='flex justify-center items-center w-8 h-8 rounded-[8px] bg-gray-light-500 text-gray-light hover:bg-gray-dark-50 hover:text-gray-light'>
                             <MdSunny
                               onClick={darkModeHandler}
-                              className='text-[19px]'
+                              className='text-[19px] text-gray-dark dark:text-gray-light'
                             />
                           </button>
                         ) : (
-                          <button>
+                          <button className='flex justify-center items-center w-8 h-8 rounded-[8px] bg-gray-light-500 text-gray-light hover:bg-gray-dark-50 hover:text-gray-light'>
                             <GiMoonBats
                               onClick={darkModeHandler}
                               className='text-[19px]'

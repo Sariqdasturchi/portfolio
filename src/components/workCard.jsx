@@ -10,18 +10,18 @@ export default function WorkCard () {
             key={item.id}
             className={`${
               id === work.length  ? 'mt-0' : 'mt-5'
-            } w-[90%] h-[auto] flex flex-col justify-center p-8 bg-gray-light rounded-[12px]`}
+            } w-[90%] h-[auto] flex flex-col justify-center p-8 bg-gray-light dark:bg-gray-dark-100 rounded-[12px]`}
           >
             <div>
               <h2 className='text-[22px] font-medium text-emerald'>{item.name}</h2>
             </div>
             <div className='mt-4'>
-              <p className='font-medium'>{item.date}</p>
+              <p className='font-medium text-gray-dark dark:text-gray-light'>{item.date}</p>
             </div>
             <div className='mt-2'>
-              <h1 className='text-[20px] font-semibold'>{item.job}</h1>
+              <h1 className='text-[20px] font-semibold text-gray-dark dark:text-gray-light'>{item.job}</h1>
             </div>
-            <div className='mt-4'>
+            <div className='mt-4 text-gray-dark dark:text-gray-light'>
               <p>{item.description}</p>
             </div>
           </div>
