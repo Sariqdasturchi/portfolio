@@ -140,15 +140,32 @@ export const projects = [
     name: 'Sarvar SMM',
     description:
       'Sarvar-SMM website has a frontend section for posting on Instagram, Telegram, Youtube and similar platforms..',
-    tags: [
-      'Html',
-      'Css',
-      'JavaScript',
-      'Bootstrap',
-      'Figma',
-      'Git'
-    ],
+    tags: ['Html', 'Css', 'JavaScript', 'Bootstrap', 'Figma', 'Git'],
     imageUrl: smm,
     projectUrl: 'https://sarvar-smm.netlify.app/'
+  }
+]
+
+export const Testimonials = [
+  {
+    id: 1,
+    name: 'Ubaydullo Abduhofizov',
+    message:
+      '“Job well done! I am really impressed. He is very very good at what he does:) I would recommend Suhrob and will rehire in the future for Frontend development.”',
+    company: 'Founder - abduhofizov.uz'
+  },
+  {
+    id: 2,
+    name: 'John Doe',
+    message:
+      '“Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.”',
+    company: 'Freelancer'
+  },
+  {
+    id: 3,
+    name: 'Sarvar',
+    message:
+      '“I am very happy with the project I was given, he completed it in a timely manner and to my liking. I recommend Suhrob to others, he is a great developer for creating websites.”',
+    company: 'Founder - Sarvar-SMM'
   }
 ]

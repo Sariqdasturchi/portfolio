@@ -4,6 +4,7 @@ import About from './about'
 import Skills from './skills'
 import Work from './work'
 import Projects from '../components/projects'
+import Testimonails from './testimonails'
 
 
 
@@ -15,6 +16,7 @@ export default function Layout() {
     <Skills />
     <Work />
     <Projects />
+    <Testimonails />
    </>
   )
 }

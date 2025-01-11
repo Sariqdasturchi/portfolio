@@ -5,7 +5,7 @@ import ProjectsCard from './projectsCard'
 export default function Projects () {
   return (
     <>
-      <section>
+      <section className='w-full h-auto flex flex-col justify-center items-center bg-gray-light'>
         <div className='pt-5 mx-auto flex justify-center items-center mb-4'>
           <TagButton children={'Works'} />
         </div>
