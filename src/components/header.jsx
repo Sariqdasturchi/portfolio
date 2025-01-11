@@ -4,6 +4,8 @@ import { GiMoonBats } from 'react-icons/gi'
 import { MdSunny } from 'react-icons/md'
 import { MdOutlineClose } from 'react-icons/md'
 import { navMenu } from '../utils/constants'
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6'
+
 
 import resume from '../assets/Resume.pdf'
 
@@ -25,8 +27,10 @@ export default function Header () {
         <nav className='w-full sm:w-full md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%] h-full flex justify-between sm:justify-between md:justify-between lg:justify-between xl:justify-between 2xl:justify-between items-center pr-5 pl-5'>
           <div>
             <a href='/'>
-              <span className='text-[28px] sm:text-[30px] md:text-[32px] lg:text-[34px] xl:text-[36px] 2xl:text-[38px] font-semibold'>
-                SD
+              <span className='flex justify-center items-center text-[28px] sm:text-[30px] md:text-[32px] lg:text-[34px] xl:text-[36px] 2xl:text-[38px] font-semibold'>
+                <FaAngleLeft />
+                SD /
+                <FaAngleRight />
               </span>
             </a>
           </div>
