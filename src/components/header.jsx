@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { HiOutlineMenuAlt1 } from 'react-icons/hi'
-import { GiMoonBats } from 'react-icons/gi'
+import { BsFillMoonStarsFill } from "react-icons/bs";
 import { MdSunny } from 'react-icons/md'
 import { MdOutlineClose } from 'react-icons/md'
 import { navMenu } from '../utils/constants'
@@ -78,7 +78,7 @@ export default function Header () {
                     </button>
                   ) : (
                     <button className='flex justify-center items-center w-8 h-8 rounded-[8px] bg-gray-light-500 text-gray-light hover:bg-gray-dark-50 hover:text-gray-light'>
-                      <GiMoonBats
+                      <BsFillMoonStarsFill
                         onClick={darkModeHandler}
                         className=' cursor-pointer'
                       />
@@ -156,7 +156,7 @@ export default function Header () {
                           </button>
                         ) : (
                           <button className='flex justify-center items-center w-8 h-8 rounded-[8px] bg-gray-light-500 text-gray-light hover:bg-gray-dark-50 hover:text-gray-light'>
-                            <GiMoonBats
+                            <BsFillMoonStarsFill
                               onClick={darkModeHandler}
                               className='text-[19px]'
                             />

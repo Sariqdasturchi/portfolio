@@ -5,6 +5,8 @@ import Skills from './skills'
 import Work from './work'
 import Projects from '../components/projects'
 import Testimonails from './testimonails'
+import Contact from './contact'
+import Footer from '../components/footer'
 
 
 
@@ -17,6 +19,8 @@ export default function Layout() {
     <Work />
     <Projects />
     <Testimonails />
+    <Contact />
+    <Footer />
    </>
   )
 }
