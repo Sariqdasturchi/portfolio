@@ -5,6 +5,8 @@ import { MdSunny } from 'react-icons/md'
 import { MdOutlineClose } from 'react-icons/md'
 import { navMenu } from '../utils/constants'
 
+import resume from '../assets/Resume.pdf'
+
 export default function Header () {
   const [darkMode, setDarkMode] = useState(true)
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -19,7 +21,7 @@ export default function Header () {
 
   return (
     <>
-      <header className='w-full h-[65px] sm:h-[70px] md:h-[75px] lg:h-[80px] xl:h-[85px] 2xl:h-[90px] flex items-center justify-center  shadow-sm'>
+      <header className='w-full h-[65px] sm:h-[70px] md:h-[75px] lg:h-[80px] xl:h-[85px] 2xl:h-[90px] flex items-center justify-center  shadow-sm fixed  backdrop-blur-sm z-50'>
         <nav className='w-full sm:w-full md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%] h-full flex justify-between sm:justify-between md:justify-between lg:justify-between xl:justify-between 2xl:justify-between items-center pr-5 pl-5'>
           <div>
             <a href='/'>
@@ -64,9 +66,13 @@ export default function Header () {
                   )}
                 </div>
                 <div>
-                  <button className='w-[100%] h-[36px] pl-2 pr-2 bg-gray-light-900 text-gray-light-50 font-medium rounded-[12px] ml-2'>
+                  <a
+                    href={resume}
+                    download={resume}
+                    className='w-[100%] h-[36px] p-3 bg-gray-light-900 text-gray-light-50 font-medium rounded-[12px] ml-2 cursor-pointer'
+                  >
                     Download CV
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -133,9 +139,11 @@ export default function Header () {
                       </div>
                     </div>
                     <div className='w-full h-[auto] mt-5'>
-                      <button className='w-[90%] h-[36px] bg-gray-light-900 text-gray-light-50 font-medium rounded-[12px]'>
-                        Download CV
-                      </button>
+                      <a href={resume} download={resume}>
+                        <button className='w-[90%] h-[36px] bg-gray-light-900 text-gray-light-50 font-medium rounded-[12px]'>
+                          Download CV
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
