@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     colors: {
+      'gray-light': '#fff',
       'gray-light-50': '#f9fafb',
       'gray-light-100': '#f3f4f6',
       'gray-light-200': '#e5e7eb',

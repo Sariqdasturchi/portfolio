@@ -1,8 +1,9 @@
 import React from 'react'
-import Header from '../components/header'
 import Home from './home'
 import About from './about'
 import Skills from './skills'
+import Work from './work'
+
 
 
 export default function Layout() {
@@ -11,6 +12,7 @@ export default function Layout() {
     <Home />
     <About />
     <Skills />
+    <Work />
    </>
   )
 }
