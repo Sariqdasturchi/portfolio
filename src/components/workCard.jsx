@@ -4,7 +4,7 @@ import { work } from '../utils/constants'
 export default function WorkCard () {
   return (
     <>
-      <div className='w-[90%] h-[auto] mx-auto flex flex-col justify-center items-center'>
+      <div className='w-[90%] sm:w[90%] md:w-[85%] lg:w-[70%] xl:w-[60%] 2xl:w-[50%] h-[auto] mx-auto flex flex-col justify-center items-center'>
         {work.map((item, id) => (
           <div
             key={item.id}
