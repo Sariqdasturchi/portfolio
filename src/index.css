@@ -26,3 +26,16 @@ html {
         border-left: none;
     }
 }
+
+.scroll-top-btn {
+    animation: scrollTop 1s ease-in-out;
+}
+
+@keyframes scrollTop {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

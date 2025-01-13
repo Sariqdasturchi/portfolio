@@ -1,15 +1,38 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import userImage from '../assets/user-home.jpg'
 import { FiMapPin } from 'react-icons/fi'
 import { FaGithub } from 'react-icons/fa'
 import { FiYoutube } from 'react-icons/fi'
 import { IoLogoLinkedin } from 'react-icons/io5'
 import { TbBrandTelegram } from 'react-icons/tb'
+import { CiSaveUp1 } from 'react-icons/ci'
 
 export default function Home () {
+  const [isVisible, setIsVisible] = useState(false)
+  // Scrollni kuzatish uchun useEffect
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true) // Tugma ko'rinadi
+      } else {
+        setIsVisible(false) // Tugma yashiriladi
+      }
+    }
+    window.addEventListener('scroll', toggleVisibility)
+    // Cleanup: remove listener
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility)
+    }
+  }, [])
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Yumshoq (smooth) ko'tarilish
+    })
+  }
   return (
     <>
-      <section className='w-full h-auto  bg-gray-light dark:bg-gray-dark'>
+      <section className='relative w-full h-auto  bg-gray-light dark:bg-gray-dark'>
         <div className='w-[90%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[80%] 2xl:w-[80%] h-100vh sm:h-[50vh] md:h-[60vh] lg:h-[65vh] xl:h-[75vh] 2xl:h-[100vh] mx-auto flex flex-col sm:flex-row-reverse md:flex-row-reverse lg:flex-row-reverse xl:flex-row-reverse 2xl:flex-row-reverse items-center sm:justify-between pt-14 md:pt-0 '>
           {/* user card */}
           <div className='relative w-[280px] sm:w-[290px] md:w-[300px] lg:w-[320px] xl:w-[330px] 2xl:w-[400px] h-[280px] sm:h-[290px] md:h-[300px] lg:h-[320px] xl:h-[330px] 2xl:h-[350px] flex justify-center items-center mt-12'>
@@ -17,7 +40,7 @@ export default function Home () {
             <div
               className='absolute -bottom-4 -right-4 w-full h-full border-[15px] sm:border-[15px] md:border-[20px] border-gray-light-300 dark:border-gray-dark-200'
               style={{
-                clipPath: 'polygon(100% 0, 100% 100%, 0 100%)',
+                clipPath: 'polygon(100% 0, 100% 100%, 0 100%)'
               }}
             ></div>
 
@@ -90,6 +113,16 @@ export default function Home () {
             </div>
           </div>
         </div>
+        {isVisible && (
+          <div className='absolute right-5 bottom-5 flex justify-center items-center '>
+            <div
+              className='fixed right-5 bottom-5 flex justify-center items-center  w-12 h-12 rounded-full  bg-emerald cursor-pointer scroll-top-btn z-50'
+              onClick={scrollToTop}
+            >
+              <CiSaveUp1 className='text-[26px] text-gray-light' />
+            </div>
+          </div>
+        )}
       </section>
     </>
   )
