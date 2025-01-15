@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { HiOutlineMenuAlt1 } from 'react-icons/hi'
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { MdSunny } from 'react-icons/md'
 import { MdOutlineClose } from 'react-icons/md'
 import { navMenu } from '../utils/constants'
@@ -70,18 +70,18 @@ export default function Header () {
               <div className='flex items-center ml-5'>
                 <div className='flex mr-3'>
                   {darkMode ? (
-                    <button className='flex justify-center items-center w-8 h-8 rounded-[8px] dark:bg-gray-dark-300 hover:opacity-80'>
-                      <MdSunny
-                        onClick={darkModeHandler}
-                        className='cursor-pointer text-gray-dark dark:text-gray-light'
-                      />
+                    <button
+                      className='flex justify-center items-center w-8 h-8 rounded-[8px] dark:bg-gray-dark-300 hover:opacity-80'
+                      onClick={darkModeHandler}
+                    >
+                      <MdSunny className='cursor-pointer text-gray-dark dark:text-gray-light' />
                     </button>
                   ) : (
-                    <button className='flex justify-center items-center w-8 h-8 rounded-[8px] bg-gray-light-500 text-gray-light hover:bg-gray-dark-50 hover:text-gray-light'>
-                      <BsFillMoonStarsFill
-                        onClick={darkModeHandler}
-                        className=' cursor-pointer'
-                      />
+                    <button
+                      className='flex justify-center items-center w-8 h-8 rounded-[8px] bg-gray-light-500 text-gray-light hover:bg-gray-dark-50 hover:text-gray-light'
+                      onClick={darkModeHandler}
+                    >
+                      <BsFillMoonStarsFill className=' cursor-pointer' />
                     </button>
                   )}
                 </div>
@@ -101,11 +101,8 @@ export default function Header () {
           {/* mobile menu */}
           <div className='flex sm:flex md:hidden lg:hidden xl:hidden 2xl:hidden items-center justify-center'>
             {!toggleMenu && (
-              <button>
-                <HiOutlineMenuAlt1
-                  onClick={toggleMenuHandler}
-                  className='text-[24px] dark:text-gray-light'
-                />
+              <button onClick={toggleMenuHandler}>
+                <HiOutlineMenuAlt1 className='text-[24px] dark:text-gray-light' />
               </button>
             )}
           </div>
@@ -120,11 +117,8 @@ export default function Header () {
                       <FaAngleRight />
                     </span>
                   </a>
-                  <button>
-                    <MdOutlineClose
-                      onClick={toggleMenuHandler}
-                      className='text-[24px] text-gray-dark dark:text-gray-light'
-                    />
+                  <button onClick={toggleMenuHandler}>
+                    <MdOutlineClose className='text-[24px] text-gray-dark dark:text-gray-light' />
                   </button>
                 </div>
                 <div className='w-[100%] h-[auto] mx-auto pl-5'>
@@ -148,18 +142,18 @@ export default function Header () {
                       </h3>
                       <div className='flex mr-10'>
                         {darkMode ? (
-                          <button className='flex justify-center items-center w-8 h-8 rounded-[8px] bg-gray-light-500 text-gray-light hover:bg-gray-dark-50 hover:text-gray-light'>
-                            <MdSunny
-                              onClick={darkModeHandler}
-                              className='text-[19px] text-gray-dark dark:text-gray-light'
-                            />
+                          <button
+                            className='flex justify-center items-center w-8 h-8 rounded-[8px] bg-gray-light-500 text-gray-light hover:bg-gray-dark-50 hover:text-gray-light'
+                            onClick={darkModeHandler}
+                          >
+                            <MdSunny className='text-[19px] text-gray-dark dark:text-gray-light' />
                           </button>
                         ) : (
-                          <button className='flex justify-center items-center w-8 h-8 rounded-[8px] bg-gray-light-500 text-gray-light hover:bg-gray-dark-50 hover:text-gray-light'>
-                            <BsFillMoonStarsFill
-                              onClick={darkModeHandler}
-                              className='text-[19px]'
-                            />
+                          <button
+                            className='flex justify-center items-center w-8 h-8 rounded-[8px] bg-gray-light-500 text-gray-light hover:bg-gray-dark-50 hover:text-gray-light'
+                            onClick={darkModeHandler}
+                          >
+                            <BsFillMoonStarsFill className='text-[19px]' />
                           </button>
                         )}
                       </div>
