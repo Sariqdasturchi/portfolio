@@ -61,6 +61,7 @@ import portfolio from '../assets/port.jpg'
 import panda from '../assets/panda.jpg'
 import turon from '../assets/turon.jpg'
 import smm from '../assets/smm.jpg'
+import woodlux from '../assets/woodlux.jpg'
 
 export const projects = [
   {
@@ -143,7 +144,16 @@ export const projects = [
     tags: ['Html', 'Css', 'JavaScript', 'Bootstrap', 'Figma', 'Git'],
     imageUrl: smm,
     projectUrl: 'https://sarvar-smm.netlify.app/'
-  }
+  },
+  {
+    id: 6,
+    name: 'WoodLux',
+    description:
+      'woodlux website is an unfinished website template for a company that makes wooden furniture',
+    tags: ['Html', 'Css', 'JavaScript', 'Bootstrap', 'Figma', 'Git', 'Vercel'],
+    imageUrl: woodlux,
+    projectUrl: 'https://woodlux.vercel.app/'
+  },
 ]
 
 export const Testimonials = [
