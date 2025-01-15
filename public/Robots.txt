@@ -1,0 +1,3 @@
+HOST: @
+TYPE: TXT
+VALUE: google-site-verification=jvVTXTEVLniFgnR1s1Ww6TySiqlVQ-0r8QVMKup3wfE
