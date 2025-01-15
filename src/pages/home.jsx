@@ -114,9 +114,9 @@ export default function Home () {
           </div>
         </div>
         {isVisible && (
-          <div className='absolute right-5 bottom-15 flex justify-center items-center '>
+          <div className='absolute right-5 bottom-12 flex justify-center items-center '>
             <div
-              className='fixed right-5 bottom-15 flex justify-center items-center  w-12 h-12 rounded-full  bg-emerald cursor-pointer scroll-top-btn z-10 shadow-lg shadow-emerald'
+              className='fixed right-5 bottom-12 flex justify-center items-center  w-12 h-12 rounded-full  bg-emerald cursor-pointer scroll-top-btn z-10 shadow-lg shadow-emerald'
               onClick={scrollToTop}
             >
               <CiSaveUp1 className='text-[26px] text-gray-light' />
