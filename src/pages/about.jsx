@@ -1,6 +1,6 @@
 import React from 'react'
 import TagButton from '../components/tagButton'
-import userImage from '../assets/userimg.png'
+import userImage from '../assets/user-about.jpg'
 export default function About () {
   return (
     <>
