@@ -62,6 +62,7 @@ import panda from '../assets/panda.jpg'
 import turon from '../assets/turon.jpg'
 import smm from '../assets/smm.jpg'
 import woodlux from '../assets/woodlux.jpg'
+import gidrofil from '../assets/gidrofil.jpg'
 
 export const projects = [
   {
@@ -153,6 +154,15 @@ export const projects = [
     tags: ['Html', 'Css', 'JavaScript', 'Bootstrap', 'Figma', 'Git', 'Vercel'],
     imageUrl: woodlux,
     projectUrl: 'https://woodlux.vercel.app/'
+  },
+  {
+    id: 7,
+    name: 'Gidrofil O\nsimliklari',
+    description:
+      'woodlux website is an unfinished website template for a company that makes wooden furniture',
+    tags: ['React js', 'Tailwind Css', 'React-pdf', 'MongoDB', 'Figma', 'Git', 'Vercel', 'Domen uz'],
+    imageUrl: gidrofil,
+    projectUrl: 'https://www.gidrofilosimliklari.uz/'
   },
 ]
 
