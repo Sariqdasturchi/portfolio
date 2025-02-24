@@ -159,7 +159,7 @@ export const projects = [
     id: 7,
     name: "Gidrofil O'simliklari",
     description:
-      'woodlux website is an unfinished website template for a company that makes wooden furniture',
+      'The Hydrophilic Plants website is a website developed for the Samarkand State University of Veterinary Medicine and Animal Husbandry to digitize dissertations.',
     tags: ['React js', 'Tailwind Css', 'React-pdf', 'MongoDB', 'Figma', 'Git', 'Vercel', 'Domen uz'],
     imageUrl: gidrofil,
     projectUrl: 'https://www.gidrofilosimliklari.uz/'
