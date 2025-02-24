@@ -157,7 +157,7 @@ export const projects = [
   },
   {
     id: 7,
-    name: 'Gidrofil O\nsimliklari',
+    name: "Gidrofil O'simliklari",
     description:
       'woodlux website is an unfinished website template for a company that makes wooden furniture',
     tags: ['React js', 'Tailwind Css', 'React-pdf', 'MongoDB', 'Figma', 'Git', 'Vercel', 'Domen uz'],
