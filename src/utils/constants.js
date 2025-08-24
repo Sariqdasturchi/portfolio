@@ -36,7 +36,7 @@ export const work = [
     date: 'Feb 2024 - Mentor',
     job: 'Frontend Developer',
     description:
-      'In February 2024, I was hired as a test worker at the Samarkand Youth Technopark in Samarkand, where I did a 1-month internship and then was hired. I have been working there to this day. By the way, I work there as a Frontend mentor and Frontend developer.'
+      'In February 2024, I was hired as a test worker at the Samarkand Youth Technopark in Samarkand, where I did a 1-month internship and then was hired. I have been working there to this day. By the way, I work there as a Frontend mentor and Frontend developer, To date, I have worked with over 30+ students individually.'
   },
   {
     id: 2,
@@ -65,25 +65,6 @@ import woodlux from '../assets/woodlux.jpg'
 import gidrofil from '../assets/gidrofil.jpg'
 
 export const projects = [
-  {
-    id: 1,
-    name: 'Ustozweb',
-    description:
-      'The ustozweb project is a website that provides training for creating websites and telegram bots, and also offers online courses in web programming.',
-    tags: [
-      'React',
-      'Node js',
-      'MongoDB',
-      'Nest.js',
-      'React-router-dom',
-      'JavaScript',
-      'Tailwindcss',
-      'Figma',
-      'Git'
-    ],
-    imageUrl: ustozweb,
-    projectUrl: 'https://ustozweb.uz'
-  },
   {
     id: 2,
     name: "Ko'rkam Dizayn",

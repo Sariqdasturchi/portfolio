@@ -12,7 +12,7 @@ export default function Skills () {
         <div className='p-5 text-center mb-4'>
             <h2 className='text-[24px] sm:text-[25px] md:text-[26px] lg:text-[28px]  font-medium text-gray-dark dark:text-gray-light'>The skills, tools and technologies I am really good at:</h2>
         </div>
-        <div className='w-[90%] sm:w-[80%] md:w-[80%] lg:w-[75%] xl:w-[70%] 2xl:w-[65%] h-[auto] mx-auto'>
+        <div className='w-[90%] sm:w-[80%] md:w-[80%] lg:w-[75%] xl:w-[70%] 2xl:w-[65%] h-[auto] flex justify-center items-center p-16'>
             <SkillsCard />
         </div>
       </section>

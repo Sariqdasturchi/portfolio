@@ -32,7 +32,7 @@ export default function Home () {
   }
   return (
     <>
-      <section className='relative w-full h-auto  bg-gray-light dark:bg-gray-dark'>
+      <section className='relative w-full h-dvh flex flex-col justify-center items-center  bg-gray-light dark:bg-gray-dark'>
         <div className='w-[90%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[80%] 2xl:w-[80%] h-100vh sm:h-[50vh] md:h-[60vh] lg:h-[65vh] xl:h-[75vh] 2xl:h-[100vh] mx-auto flex flex-col sm:flex-row-reverse md:flex-row-reverse lg:flex-row-reverse xl:flex-row-reverse 2xl:flex-row-reverse items-center sm:justify-between pt-14 md:pt-0 '>
           {/* user card */}
           <div className='relative w-[280px] sm:w-[290px] md:w-[300px] lg:w-[320px] xl:w-[330px] 2xl:w-[400px] h-[280px] sm:h-[290px] md:h-[300px] lg:h-[320px] xl:h-[330px] 2xl:h-[350px] flex justify-center items-center mt-12'>
@@ -64,10 +64,10 @@ export default function Home () {
             {/* description */}
             <div>
               <p className='dark:text-gray-light'>
-                I'm a Frontend developer (React.js) with a focus on creating
+                I'm a Frontend developer (React.js, Next.js, TypeScript) with a focus on creating
                 (and occasionally designing) exceptional digital experiences
                 that are fast, accessible, visually appealing, and responsive.
-                Even though I have been creating web applications for over 2
+                Even though I have been creating web applications for over 3+
                 years, I still love it as if it was something new.
               </p>
             </div>
